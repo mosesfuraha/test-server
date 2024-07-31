@@ -1,0 +1,393 @@
+{
+  "gameModes": [
+    {
+      "mode": "Vocabulary Quiz",
+      "description": "Test your vocabulary knowledge through quizzes to improve word recognition and recall.",
+      "endpoint": "/vocabulary"
+    },
+    {
+      "mode": "Sentence Building",
+      "description": "Practice constructing sentences to improve grammar and syntax skills.",
+      "endpoint": "/sentence"
+    },
+    {
+      "mode": "Simulated Conversations",
+      "description": "Engage in simulated conversations to practice real-world language use.",
+      "endpoint": "/dialogue"
+    }
+  ],
+  "vocabulary": {
+    "mode": "Vocabulary Quiz",
+    "languages": [
+      {
+        "language": "English",
+        "vocabulary": [
+          {
+            "id": 1,
+            "word": "apple",
+            "translation": "apple",
+            "partOfSpeech": "noun",
+            "exampleSentences": [
+              "I eat an apple every day.",
+              "The apple is red."
+            ]
+          },
+          {
+            "id": 2,
+            "word": "run",
+            "translation": "run",
+            "partOfSpeech": "verb",
+            "exampleSentences": ["I run in the morning.", "He runs fast."]
+          }
+        ],
+        "quizzes": [
+          {
+            "id": 1,
+            "question": "What is the translation of 'apple'?",
+            "type": "multiple-choice",
+            "options": ["banana", "apple", "grape", "orange"],
+            "correctAnswer": "apple",
+            "feedback": "Correct! 'apple' is the right answer."
+          },
+          {
+            "id": 2,
+            "question": "What is the part of speech for 'run'?",
+            "type": "multiple-choice",
+            "options": ["noun", "verb", "adjective", "adverb"],
+            "correctAnswer": "verb",
+            "feedback": "Correct! 'run' is a verb."
+          },
+          {
+            "id": 3,
+            "question": "Fill in the blank: 'She likes to _____ in the park.'",
+            "type": "fill-in-the-blank",
+            "correctAnswer": "run",
+            "feedback": "Correct! 'run' fits the sentence."
+          }
+        ]
+      },
+      {
+        "language": "French",
+        "vocabulary": [
+          {
+            "id": 1,
+            "word": "pomme",
+            "translation": "apple",
+            "partOfSpeech": "nom",
+            "exampleSentences": [
+              "Je mange une pomme tous les jours.",
+              "La pomme est rouge."
+            ]
+          },
+          {
+            "id": 2,
+            "word": "courir",
+            "translation": "run",
+            "partOfSpeech": "verbe",
+            "exampleSentences": ["Je cours le matin.", "Il court vite."]
+          }
+        ],
+        "quizzes": [
+          {
+            "id": 1,
+            "question": "Quelle est la traduction de 'pomme'?",
+            "type": "choix multiple",
+            "options": ["banane", "pomme", "raisin", "orange"],
+            "correctAnswer": "pomme",
+            "feedback": "Correct! 'pomme' est la bonne réponse."
+          },
+          {
+            "id": 2,
+            "question": "Quelle est la catégorie grammaticale de 'courir'?",
+            "type": "choix multiple",
+            "options": ["nom", "verbe", "adjectif", "adverbe"],
+            "correctAnswer": "verbe",
+            "feedback": "Correct! 'courir' est un verbe."
+          },
+          {
+            "id": 3,
+            "question": "Remplissez le blanc: 'Elle aime _____ dans le parc.'",
+            "type": "remplir le blanc",
+            "correctAnswer": "courir",
+            "feedback": "Correct! 'courir' convient à la phrase."
+          }
+        ]
+      }
+    ]
+  },
+  "sentence": {
+    "mode": "Sentence Building",
+    "languages": [
+      {
+        "language": "English",
+        "exercises": [
+          {
+            "id": 1,
+            "sentence": "The quick brown fox jumps over the lazy dog.",
+            "words": [
+              "The",
+              "quick",
+              "brown",
+              "fox",
+              "jumps",
+              "over",
+              "the",
+              "lazy",
+              "dog"
+            ],
+            "correctOrder": [
+              "The",
+              "quick",
+              "brown",
+              "fox",
+              "jumps",
+              "over",
+              "the",
+              "lazy",
+              "dog"
+            ],
+            "feedback": "Great job! The sentence is correct."
+          },
+          {
+            "id": 2,
+            "sentence": "She sells seashells by the seashore.",
+            "words": ["She", "sells", "seashells", "by", "the", "seashore"],
+            "correctOrder": [
+              "She",
+              "sells",
+              "seashells",
+              "by",
+              "the",
+              "seashore"
+            ],
+            "feedback": "Well done! The sentence is correct."
+          },
+          {
+            "id": 3,
+            "sentence": "Arrange the words to form a correct sentence: 'dog / the / runs / fast'",
+            "words": ["dog", "the", "runs", "fast"],
+            "correctOrder": ["the", "dog", "runs", "fast"],
+            "feedback": "Correct! The sentence is 'The dog runs fast.'"
+          }
+        ]
+      },
+      {
+        "language": "French",
+        "exercises": [
+          {
+            "id": 1,
+            "sentence": "Le rapide renard brun saute par-dessus le chien paresseux.",
+            "words": [
+              "Le",
+              "rapide",
+              "renard",
+              "brun",
+              "saute",
+              "par-dessus",
+              "le",
+              "chien",
+              "paresseux"
+            ],
+            "correctOrder": [
+              "Le",
+              "rapide",
+              "renard",
+              "brun",
+              "saute",
+              "par-dessus",
+              "le",
+              "chien",
+              "paresseux"
+            ],
+            "feedback": "Bon travail! La phrase est correcte."
+          },
+          {
+            "id": 2,
+            "sentence": "Elle vend des coquillages au bord de la mer.",
+            "words": [
+              "Elle",
+              "vend",
+              "des",
+              "coquillages",
+              "au",
+              "bord",
+              "de",
+              "la",
+              "mer"
+            ],
+            "correctOrder": [
+              "Elle",
+              "vend",
+              "des",
+              "coquillages",
+              "au",
+              "bord",
+              "de",
+              "la",
+              "mer"
+            ],
+            "feedback": "Bien joué! La phrase est correcte."
+          },
+          {
+            "id": 3,
+            "sentence": "Arrangez les mots pour former une phrase correcte: 'chien / le / court / vite'",
+            "words": ["chien", "le", "court", "vite"],
+            "correctOrder": ["le", "chien", "court", "vite"],
+            "feedback": "Correct! La phrase est 'Le chien court vite.'"
+          }
+        ]
+      }
+    ]
+  },
+  "dialogue": {
+    "mode": "Simulated Conversations",
+    "languages": [
+      {
+        "language": "English",
+        "dialogues": [
+          {
+            "id": 1,
+            "text": "Hello! How are you?",
+            "options": [
+              {
+                "text": "I am fine, thank you. How are you?",
+                "nextDialogueId": 2,
+                "feedback": "Great response!",
+                "isCorrect": true
+              },
+              {
+                "text": "What's up?",
+                "nextDialogueId": 3,
+                "feedback": "Casual response, appropriate for friends.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "text": "I'm doing well, thank you. What brings you here today?",
+            "options": [
+              {
+                "text": "I am here to learn English.",
+                "nextDialogueId": 4,
+                "feedback": "Good! Let's get started.",
+                "isCorrect": true
+              },
+              {
+                "text": "Just passing by.",
+                "nextDialogueId": 5,
+                "feedback": "Nice to meet you!",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "text": "I'm just hanging out. What about you?",
+            "options": [
+              {
+                "text": "I'm here to learn English.",
+                "nextDialogueId": 4,
+                "feedback": "Good choice!",
+                "isCorrect": true
+              },
+              {
+                "text": "Nothing much, just relaxing.",
+                "nextDialogueId": 5,
+                "feedback": "Sounds good!",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "text": "That's great! Let's start with some vocabulary.",
+            "options": [],
+            "feedback": "Ready to begin learning!",
+            "isCorrect": true
+          },
+          {
+            "id": 5,
+            "text": "Alright, have a great day!",
+            "options": [],
+            "feedback": "Goodbye!",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "language": "French",
+        "dialogues": [
+          {
+            "id": 1,
+            "text": "Bonjour! Comment ça va?",
+            "options": [
+              {
+                "text": "Je vais bien, merci. Et toi?",
+                "nextDialogueId": 2,
+                "feedback": "Bonne réponse!",
+                "isCorrect": true
+              },
+              {
+                "text": "Quoi de neuf?",
+                "nextDialogueId": 3,
+                "feedback": "Réponse décontractée, appropriée pour les amis.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "text": "Je vais bien, merci. Qu'est-ce qui t'amène ici aujourd'hui?",
+            "options": [
+              {
+                "text": "Je suis ici pour apprendre le français.",
+                "nextDialogueId": 4,
+                "feedback": "Bien! Commençons.",
+                "isCorrect": true
+              },
+              {
+                "text": "Je ne fais que passer.",
+                "nextDialogueId": 5,
+                "feedback": "Ravi de te rencontrer!",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "text": "Je traîne juste. Et toi?",
+            "options": [
+              {
+                "text": "Je suis ici pour apprendre le français.",
+                "nextDialogueId": 4,
+                "feedback": "Bon choix!",
+                "isCorrect": true
+              },
+              {
+                "text": "Pas grand-chose, juste en train de me détendre.",
+                "nextDialogueId": 5,
+                "feedback": "Ça a l'air bien!",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "text": "C'est génial! Commençons par du vocabulaire.",
+            "options": [],
+            "feedback": "Prêt à commencer à apprendre!",
+            "isCorrect": true
+          },
+          {
+            "id": 5,
+            "text": "D'accord, passe une bonne journée!",
+            "options": [],
+            "feedback": "Au revoir!",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+}

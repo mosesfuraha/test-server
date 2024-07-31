@@ -1,0 +1,10 @@
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>
+<h3 class="heading">Select a game to continue</h3>
+<div class="game-modes-container">
+  <div *ngFor="let gameMode of gameModes" class="game-mode-card">
+    <h3>{{ gameMode.mode }}</h3>
+    <p>{{ gameMode.description }}</p>
+  </div>
+</div>

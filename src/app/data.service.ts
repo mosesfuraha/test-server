@@ -7,7 +7,7 @@ import { catchError, map } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class DataService {
-  private url = 'http://127.0.0.1:5500/games.json';
+  private url = './games.json';
 
   constructor(private http: HttpClient) {}
 

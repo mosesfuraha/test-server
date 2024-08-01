@@ -1,18 +1,19 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { catchError } from 'rxjs/operators';
+import { catchError, map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DataService {
-  private url = 'http://localhost:3000';
+  private url = 'http://127.0.0.1:5500/games.json';
 
   constructor(private http: HttpClient) {}
 
   getGameModes(): Observable<any> {
-    return this.http.get(`${this.url}/gameModes`).pipe(
+    return this.http.get<any>(this.url).pipe(
+      map((data) => data.gameModes),
       catchError((error) => {
         console.error('getGameModes failed: ', error);
         return of({
@@ -24,7 +25,8 @@ export class DataService {
   }
 
   getVocabularyQuiz(): Observable<any> {
-    return this.http.get(`${this.url}/vocabulary`).pipe(
+    return this.http.get<any>(this.url).pipe(
+      map((data) => data.vocabulary),
       catchError((error) => {
         console.error('getVocabularyQuiz failed: ', error);
         return of({
@@ -36,7 +38,8 @@ export class DataService {
   }
 
   getSentenceQuiz(): Observable<any> {
-    return this.http.get(`${this.url}/sentence`).pipe(
+    return this.http.get<any>(this.url).pipe(
+      map((data) => data.sentence),
       catchError((error) => {
         console.error('getSentenceQuiz failed: ', error);
         return of({
@@ -48,7 +51,8 @@ export class DataService {
   }
 
   getDialoguesQuiz(): Observable<any> {
-    return this.http.get(`${this.url}/dialogue`).pipe(
+    return this.http.get<any>(this.url).pipe(
+      map((data) => data.dialogue),
       catchError((error) => {
         console.error('getDialoguesQuiz failed: ', error);
         return of({

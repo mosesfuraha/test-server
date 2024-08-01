@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "typescript:S1066": "on",
+    "typescript:S125": "on",
+    "typescript:S1481": "on",
+    "typescript:S4325": "on",
+    "typescript:S1135": "on",
+    "typescript:S3358": "on",
+    "typescript:S3453": "on",
+    "typescript:S1523": "on",
+    "typescript:S3796": "on",
+    "typescript:S1134": "on",
+    "typescript:S2209": "on"
+  }
+}
